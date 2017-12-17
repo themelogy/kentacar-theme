@@ -4,20 +4,20 @@
     @include('partials.home.sliders.1')
 
 	@if(isset($page->settings->show_box))
-		@if($page->settings->show_box)
-		<section class="page-section" style="padding:30px 0 0 0; text-align:justify;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-					@if(isset($page->settings->sub_title->{locale()}))
-					<h1 class="text-center">{{ $page->settings->sub_title->{locale()} }}</h1>
-					@endif
-					{!! $page->body !!}
-					</div>
+	@if($page->settings->show_box)
+	<section class="page-section" style="padding:30px 0 0 0; text-align:justify;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				@if(isset($page->settings->sub_title->{locale()}))
+				<h1 class="text-center">{{ $page->settings->sub_title->{locale()} }}</h1>
+				@endif
+				{!! $page->body !!}
 				</div>
 			</div>
-		</section>
-		@endif
+		</div>
+	</section>
+	@endif
 	@endif
 
     @include('partials.cars.slider')
