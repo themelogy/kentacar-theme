@@ -5,7 +5,7 @@
     <section class="page-section breadcrumbs text-center">
         <div class="container">
             <div class="page-header">
-                <h1>500</h1>
+                <h1>404</h1>
             </div>
             {!! Breadcrumbs::renderIfExists('page') !!}
         </div>
@@ -17,9 +17,9 @@
     <!-- PAGE -->
     <section class="page-section text-center error-page light">
         <div class="container">
-            <h3>500</h3>
-            <h2><i class="fa fa-warning"></i> {{ trans('core::core.error 500 title') }}</h2>
-            <p>{!! trans('core::core.error 500 description') !!}</p>
+            <h3>404</h3>
+            <h2><i class="fa fa-warning"></i> Hata! Aradığınız sayfayı bulamadık!</h2>
+            <p><a class="btn btn-theme btn-theme-dark" href="{{ url(locale()) }}">Ana Sayfaya Geri Dön</a></p>
         </div>
     </section>
     <!-- /PAGE -->
