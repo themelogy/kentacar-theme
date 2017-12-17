@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    @include('partials.home.sliders.2')
+    @include('partials.home.sliders.1')
 
 	@if(isset($page->settings->show_box))
 	@if($page->settings->show_box)
